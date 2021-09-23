@@ -1,0 +1,109 @@
+
+body {
+  background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  background-repeat: no-repeat;
+   background-size:  cover;  
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/017/539/original/forrest2.jpg?1632320252");}
+
+
+#content{
+    margin: 10% 20%; 
+    background-color: #ffffff;
+    border:#ffffff;
+    border-radius: 3%;
+    padding: 5% 10%;
+    
+}
+
+#search.form-control{
+  padding:5px 50px;
+  width:100%
+}
+
+hr{
+  display: block;
+  margin: 5% 20%;
+  font-size: 100px;
+}
+
+h1{
+   text-align: center;
+   font-size: 30px;
+   font-weight: 800;
+}
+
+#input-city{
+  font-size: 50px;
+}
+
+#search,
+#search-city,
+#search-current
+ {
+  font-size: 30px;
+}
+
+
+#weather-today{
+  text-align: center;
+  font-size: 40px;
+  margin:5% 20%;
+  margin-bottom: 10px;
+}
+
+#emoji-today{
+  font-size: 150px;
+}
+
+#description {
+  font-size: 30px;
+}
+
+#temperature{
+  font-size: 50px;
+  font-weight: 500;
+}
+
+#celsius-now, #fahrenheit-now {
+    font-size: 10px;
+}
+#hyphen{
+   font-size: 10px;
+}
+
+.week{
+  font-size: 20px;
+  transition: 150ms;
+}
+
+.week:hover{
+  font-size: 30px;
+}
+
+.emoji{
+  font-size: 50px;
+}
+
+.week-temprature{
+  font-size: 20px;
+}
+
+.col-highAndLow {
+font-size: 20px;
+}
+
+.temp-high{
+  color:#cd4545;
+}
+
+.temp-low{
+  color:#0f4c81;
+}
+
+.highAndLow{
+  font-size: 40px;
+}
+
