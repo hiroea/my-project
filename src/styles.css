@@ -10,7 +10,7 @@ body {
 
 
 #content{
-    margin: 10% 20%; 
+    margin: 5% 10%; 
     background-color: #ffffff;
     border:#ffffff;
     border-radius: 3%;
@@ -20,7 +20,7 @@ body {
 
 #search.form-control{
   padding:5px 50px;
-  width:100%
+  width:30%
 }
 
 hr{
@@ -43,36 +43,42 @@ h1{
 #search-city,
 #search-current
  {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 
 #weather-today{
   text-align: center;
-  font-size: 40px;
+  font-size: 20px;
   margin:5% 20%;
   margin-bottom: 10px;
 }
 
 #emoji-today{
-  font-size: 300%;
+  font-size: 20%;
 }
 
 #description {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 #temperature{
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 500;
 }
 
-#celsius-now, #fahrenheit-now {
-    font-size: 10px;
+.temp-high{
+  
+  color:#cd4545;
 }
-#hyphen{
-   font-size: 10px;
+
+.temp-low{
+  color:#0f4c81;}
+
+#celsius, #fahrenheit {
+    font-size: 15px;
 }
+
 
 .active {
   color: black;

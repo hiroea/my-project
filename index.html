@@ -20,7 +20,7 @@
       <div class="container">
         <form>
           <div class="row">
-            <div class="col-7">
+            <div class="col-8">
               <input
                 type="text"
                 class="form-control"
@@ -28,11 +28,15 @@
                 placeholder="Enter a city name"
               />
             </div>
-            <div class="col-1">
-              <button type="submit" class="btn btn-primary" id="search">Search</button>
+            <div class="col-2">
+              <button type="submit" class="btn btn-primary btn-sm" id="search">
+                Search
+              </button>
             </div>
-            <div class="col-4">
-              <button type="button" class="btn btn-warning"  id="search-current">
+
+
+               <div class="col-sm-2">
+              <button type="button" class="btn btn-secondary btn-sm"  id="search-current">
                 Current
               </button>
             </div>
@@ -47,11 +51,13 @@
         </h1>
         <hr />
         <div class="row" id="weather-today">
-          <div class="col" id="emoji-today">
+          <div class="col-3" >
+          <span id="emoji-today">
             <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="clear sky" id="icon"
             />
-          </div>
-          <div class="col" >
+        </span>
+        </div>
+          <div class="col-3" >
             <span id="description">
             </span>
             <br />
@@ -61,7 +67,7 @@
             <span id="units"><a href="#" id="celsius" class="active">°C</a>| <a href="#" id="fahrenheit">°F</a></span>
             
           </div>
-          <div class="col highAndLow">
+          <div class="col-3 highAndLow">
             <span class="temp-high">
                 H:
                 <span id="temp-max">
@@ -73,13 +79,11 @@
                 </span>°C
             </span>
           </div>
-          <div class="col" >
+          <div class="col-3" >
             Wind:<span id="wind-speed"> 3</span>m/s
           </div>
         </div>
 
-        
-        
           <br />
           <a href="https://github.com/hiroea/my-project">Open-sourse code</a> by Hiroe Araki
         </div>
