@@ -10,6 +10,12 @@ function handleSubmit(event) {
   showCity(city);
 }
 
+function getForecast(coordinates){
+  let apiKey = "8d78900de96863eec7f22dd9ac02260d";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+axios.get(apiUrl).then(displayForecast);
+}
+
 function ShowSearchTemp(response) {
   document.querySelector("#input-city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
@@ -36,6 +42,8 @@ function ShowSearchTemp(response) {
     response.data.wind.speed
   );
   celsiusTemp = Math.round(response.data.main.temp_min);
+
+  getForecast(response.data.coord)
 }
 
 function positionNow(position) {
@@ -66,7 +74,8 @@ function showCelsius(event) {
   fahrenheit.classList.remove("active");
 }
 
-function displayForecast(){
+function displayForecast(response){
+  console.log(response.data.daily);
   let forecastElement= document.querySelector("#forecast");
    let days = ["Thu", "Fri", "Sat", "Sun"];
   let forecasetHTML = `<div class="row">`;
