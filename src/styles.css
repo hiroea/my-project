@@ -54,9 +54,6 @@ h1{
   margin-bottom: 10px;
 }
 
-#emoji-today{
-  font-size: 20%;
-}
 
 #description {
   font-size: 20px;
@@ -79,6 +76,10 @@ h1{
     font-size: 15px;
 }
 
+.wind-speed{
+  font-size: 20px;
+}
+
 
 .active {
   color: black;
@@ -96,13 +97,21 @@ h1{
   font-size: 18px;
   transition: 150ms;
 }
-
+.weather-forecast-temp{
+  font-size: 15px;
+}
 
 #weather-forecast:hover{
   font-size: 20px;
   background-color:#e7f7de;
   border-radius: 5%;
 }
+
+.myName{
+  margin-top: 5%;
+  font-size: 15px;
+}
+
 
 
 

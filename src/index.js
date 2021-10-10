@@ -84,15 +84,14 @@ return days[day];
               <img src="http://openweathermap.org/img/wn/${
                 forecastDay.weather[0].icon
               }@2x.png" alt="clear sky" id="icon"
-               width="45px"
+               width="50px"
             />
               <div class="weather-forecast-temp">
                 <span class="temp-high">
-                ${Math.round(forecastDay.temp.max)}°C
+                ${Math.round(forecastDay.temp.max)}°
                 </span>
-                <br />
                  <span class="temp-low">
-                ${Math.round(forecastDay.temp.min)}°C
+                ${Math.round(forecastDay.temp.min)}°
                 </span>
                </div>
                </div>
