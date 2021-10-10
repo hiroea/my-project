@@ -66,6 +66,38 @@ function showCelsius(event) {
   fahrenheit.classList.remove("active");
 }
 
+function displayForecast(){
+  let forecastElement= document.querySelector("#forecast");
+   let days = ["Thu", "Fri", "Sat", "Sun"];
+  let forecasetHTML = `<div class="row">`;
+ 
+  days.forEach(function(day){
+   forecasetHTML = 
+   forecasetHTML + 
+   `
+            <div class="col-2" id="weather-forecast">
+              <div class="weather-forecast-date">
+              ${day}
+              </div>
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="clear sky" id="icon"
+               width="45px"
+            />
+              <div class="weather-forecast-temp">
+                <span class="temp-high">
+                33°C
+                </span>
+                <br />
+                 <span class="temp-low">
+                26°C
+                </span>
+               </div>
+               </div>
+  `;
+  });
+          forecasetHTML = forecasetHTML + `</div>`;
+          forecastElement.innerHTML = forecasetHTML;
+}
+
 let search = document.querySelector("form");
 search.addEventListener("submit", handleSubmit);
 
@@ -127,3 +159,4 @@ let celsius = document.querySelector("#celsius");
 celsius.addEventListener("click", showCelsius);
 
 showCity("Tokyo");
+displayForecast();
