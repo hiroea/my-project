@@ -89,3 +89,22 @@ h1{
   cursor: default;
   color: black;
 }
+
+#weather-forecast{
+  text-align: center;
+  padding: 5%;
+  font-size: 18px;
+  transition: 150ms;
+}
+
+
+#weather-forecast:hover{
+  font-size: 20px;
+  background-color:#e7f7de;
+  border-radius: 5%;
+}
+
+
+
+
+
