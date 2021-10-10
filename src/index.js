@@ -58,22 +58,6 @@ function getCurrentPosition() {
   navigator.geolocation.getCurrentPosition(positionNow);
 }
 
-function showFahrenheit(event) {
-  event.preventDefault();
-  document.querySelector("#temperature").innerHTML = Math.round(
-    (celsiusTemp * 9) / 5 + 32
-  );
-  celsius.classList.remove("active");
-  fahrenheit.classList.add("active");
-}
-
-function showCelsius(event) {
-  event.preventDefault();
-  document.querySelector("#temperature").innerHTML = Math.round(celsiusTemp);
-  celsius.classList.add("active");
-  fahrenheit.classList.remove("active");
-}
-
 function displayForecast(response){
   let forecast = response.data.daily;
 
@@ -173,13 +157,5 @@ dayNow.innerHTML = `${day}`;
 
 let button = document.querySelector("#search-current");
 button.addEventListener(`click`, getCurrentPosition);
-
-let celsiusTemp = null; 
-
-let fahrenheit = document.querySelector("#fahrenheit");
-fahrenheit.addEventListener("click", showFahrenheit);
-
-let celsius = document.querySelector("#celsius");
-celsius.addEventListener("click", showCelsius);
 
 showCity("Tokyo");
